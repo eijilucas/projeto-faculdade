@@ -6,6 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import java.util.Calendar;
+import java.util.List;
 
 @Entity
 public class Order {
@@ -16,7 +17,7 @@ public class Order {
     
     private String costumerName;
     private Calendar dataHora;
-    private OrderStatus orderStatus;
+    private List<OrderStatus> orderStatus;
 
     public Long getId() {
         return id;
@@ -42,11 +43,11 @@ public class Order {
         this.dataHora = dataHora;
     }
 
-    public OrderStatus getOrderStatus() {
+    public List<OrderStatus> getOrderStatus() {
         return orderStatus;
     }
 
-    public void setOrderStatus(OrderStatus orderStatus) {
+    public void setOrderStatus(List<OrderStatus> orderStatus) {
         this.orderStatus = orderStatus;
     }
     

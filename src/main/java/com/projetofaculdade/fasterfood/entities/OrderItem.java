@@ -1,8 +1,6 @@
 
 package com.projetofaculdade.fasterfood.entities;
 
-import jakarta.persistence.Entity;
-
 public class OrderItem {
     
     private int quantity;
