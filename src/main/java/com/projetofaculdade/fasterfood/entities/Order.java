@@ -1,10 +1,13 @@
 
 package com.projetofaculdade.fasterfood.entities;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import java.util.Calendar;
 import java.util.List;
 
@@ -12,10 +15,14 @@ import java.util.List;
 public class Order {
     
     @Id
+    @Column(name = "order_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
-    private String costumerName;
+    @ManyToOne
+    @JoinColumn(name = "costumer_name")
+    private Costumer costumerName;
+    
     private Calendar dataHora;
     private List<OrderStatus> orderStatus;
 
@@ -27,11 +34,11 @@ public class Order {
         this.id = id;
     }
 
-    public String getCostumerName() {
+    public Costumer getCostumerName() {
         return costumerName;
     }
 
-    public void setCostumerName(String costumerName) {
+    public void setCostumerName(Costumer costumerName) {
         this.costumerName = costumerName;
     }
 
