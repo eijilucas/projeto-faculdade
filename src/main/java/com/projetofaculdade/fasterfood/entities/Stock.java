@@ -2,16 +2,14 @@
 package com.projetofaculdade.fasterfood.entities;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
 import java.util.Calendar;
 
-@Entity
 public class Stock {
     
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @OneToMany
+    @JoinColumn(name = "product_id")
     private Long productId;
     
     private int quantity;

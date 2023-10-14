@@ -1,21 +1,28 @@
 
 package com.projetofaculdade.fasterfood.entities;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import java.util.Calendar;
 
 @Entity
 public class Payment {
     
     @Id
+    @Column(name = "payment_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
+    @OneToOne
+    @JoinColumn(name = "order_id")
+    private Order orderId;
+     
     private Long costumerId;
-    private Long orderId;
     private Calendar dataHora;
 
     public Long getId() {
@@ -34,11 +41,11 @@ public class Payment {
         this.costumerId = costumerId;
     }
 
-    public Long getOrderId() {
+    public Order getOrderId() {
         return orderId;
     }
 
-    public void setOrderId(Long orderId) {
+    public void setOrderId(Order orderId) {
         this.orderId = orderId;
     }
 
