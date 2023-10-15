@@ -1,5 +1,5 @@
 
-package com.projetofaculdade.fasterfood.entities;
+package com.projetofaculdade.fasterfood.entities.enums;
 
 public enum OrderStatus {
     

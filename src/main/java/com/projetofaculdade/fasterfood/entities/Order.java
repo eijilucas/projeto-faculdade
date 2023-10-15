@@ -1,6 +1,7 @@
 
 package com.projetofaculdade.fasterfood.entities;
 
+import com.projetofaculdade.fasterfood.entities.enums.OrderStatus;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
