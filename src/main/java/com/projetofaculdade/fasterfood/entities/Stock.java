@@ -1,7 +1,6 @@
 
 package com.projetofaculdade.fasterfood.entities;
 
-import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToMany;
 import java.util.Calendar;
