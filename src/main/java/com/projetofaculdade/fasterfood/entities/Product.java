@@ -33,7 +33,15 @@ public class Product {
     public void setProductId(Long productId) {
         this.productId = productId;
     }
+    
+    public Collaborator getCollaboratorId() {
+        return collaboratorId;
+    }
 
+    public void setCollaboratorId(Collaborator collaboratorId) {
+        this.collaboratorId = collaboratorId;
+    }
+    
     public String getName() {
         return name;
     }
