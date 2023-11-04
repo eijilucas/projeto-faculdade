@@ -24,7 +24,7 @@ public class Order {
     @JoinColumn(name = "costumer_name")
     private Costumer costumerName;
     
-    private Calendar dataHora;
+    private Calendar registrationTime;
     private List<OrderStatus> orderStatus;
 
     public Long getId() {
@@ -43,12 +43,12 @@ public class Order {
         this.costumerName = costumerName;
     }
 
-    public Calendar getDataHora() {
-        return dataHora;
+    public Calendar getRegistrationTime() {
+        return registrationTime;
     }
 
-    public void setDataHora(Calendar dataHora) {
-        this.dataHora = dataHora;
+    public void setRegistrationTime(Calendar registrationTime) {
+        this.registrationTime = registrationTime;
     }
 
     public List<OrderStatus> getOrderStatus() {

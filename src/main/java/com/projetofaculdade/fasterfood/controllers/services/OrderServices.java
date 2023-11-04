@@ -35,7 +35,7 @@ public class OrderServices {
 
     public void updateData(Order entity, Order order) {
         entity.setCostumerName(order.getCostumerName());
-        entity.setDataHora(order.getDataHora());
+        entity.setRegistrationTime(order.getRegistrationTime());
         entity.setOrderStatus(order.getOrderStatus());
     }
     

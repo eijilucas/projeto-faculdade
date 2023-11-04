@@ -23,7 +23,7 @@ public class Payment {
     private Order orderId;
      
     private Long costumerId;
-    private Calendar dataHora;
+    private Calendar registrationTime;
 
     public Long getId() {
         return id;
@@ -49,11 +49,11 @@ public class Payment {
         this.orderId = orderId;
     }
 
-    public Calendar getDataHora() {
-        return dataHora;
+    public Calendar getRegistrationTime() {
+        return registrationTime;
     }
 
-    public void setDataHora(Calendar dataHora) {
-        this.dataHora = dataHora;
+    public void setRegistrationTime(Calendar registrationTime) {
+        this.registrationTime = registrationTime;
     }
 }
