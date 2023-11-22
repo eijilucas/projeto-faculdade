@@ -9,38 +9,40 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 import java.util.Calendar;
 import java.util.List;
 
 @Entity
+@Table(name = "orders")
 public class Order {
     
     @Id
     @Column(name = "order_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long orderId;
     
     @ManyToOne
-    @JoinColumn(name = "costumer_name")
-    private Costumer costumerName;
+    @JoinColumn(name = "costumer_id")
+    private Costumer costumerId;
     
     private Calendar registrationTime;
     private List<OrderStatus> orderStatus;
 
-    public Long getId() {
-        return id;
+    public Long getOrderId() {
+        return orderId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setOrderId(Long orderId) {
+        this.orderId = orderId;
     }
 
     public Costumer getCostumerName() {
-        return costumerName;
+        return costumerId;
     }
 
-    public void setCostumerName(Costumer costumerName) {
-        this.costumerName = costumerName;
+    public void setCostumerName(Costumer costumerId) {
+        this.costumerId = costumerId;
     }
 
     public Calendar getRegistrationTime() {

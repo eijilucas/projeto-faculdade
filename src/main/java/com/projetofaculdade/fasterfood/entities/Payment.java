@@ -8,15 +8,17 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
+import jakarta.persistence.Table;
 import java.util.Calendar;
 
 @Entity
+@Table(name = "payments")
 public class Payment {
     
     @Id
     @Column(name = "payment_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long paymentId;
     
     @OneToOne
     @JoinColumn(name = "order_id")
@@ -25,12 +27,12 @@ public class Payment {
     private Long costumerId;
     private Calendar registrationTime;
 
-    public Long getId() {
-        return id;
+    public Long getPaymentId() {
+        return paymentId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setPaymentId(Long paymentId) {
+        this.paymentId = paymentId;
     }
 
     public Long getCostumerId() {

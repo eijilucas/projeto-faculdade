@@ -1,27 +1,34 @@
 
 package com.projetofaculdade.fasterfood.entities;
 
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import java.util.Calendar;
 
+@Entity
+@Table(name = "stocks")
 public class Stock {
     
-    @OneToMany
-    @JoinColumn(name = "product_id")
-    private Long productId;
+    @Id
+    @Column(name = "stock_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long stockId;
     
     private int quantity;
     private Calendar expirationDate;
 
-    public Long getProductId() {
-        return productId;
+    public Long getStockId() {
+        return stockId;
     }
 
-    public void setProductId(Long productId) {
-        this.productId = productId;
+    public void setStockId(Long stockId) {
+        this.stockId = stockId;
     }
-
+    
     public int getQuantity() {
         return quantity;
     }
@@ -37,6 +44,4 @@ public class Stock {
     public void setExpirationDate(Calendar expirationDate) {
         this.expirationDate = expirationDate;
     }
-    
-    
 }

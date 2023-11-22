@@ -8,8 +8,10 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "products")
 public class Product {
     
     @Id
@@ -20,6 +22,10 @@ public class Product {
     @ManyToOne
     @JoinColumn(name = "collaborator_id")
     private Collaborator collaboratorId;
+    
+    @ManyToOne
+    @JoinColumn(name = "stock_id")
+    private Stock stockId;
     
     private String name;
     private double price;
@@ -41,6 +47,16 @@ public class Product {
     public void setCollaboratorId(Collaborator collaboratorId) {
         this.collaboratorId = collaboratorId;
     }
+
+    public Stock getStockId() {
+        return stockId;
+    }
+
+    public void setStockId(Stock stockId) {
+        this.stockId = stockId;
+    }
+    
+    
     
     public String getName() {
         return name;
