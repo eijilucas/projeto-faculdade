@@ -30,18 +30,22 @@ administração dos serviços.
 
 # Tecnologias utilizadas
 ## Back end
+- Java
+- Spring
+- Maven
+- JPA/Hibernate
+- Spring Security
 
 ## Front end
+- Thymeleaf
 
 ## Implantação em produção
-- Back end: Heroku
-- Front end web: Netlify
 - Banco de dados: Postgresql
 
 # Como executar o projeto
 
 ## Back end
-Pré-requisitos: Java 11
+Pré-requisitos: Java 17
 
 ```bash
 # clonar repositório
@@ -75,8 +79,6 @@ yarn start
   em falta;
 - Dashboard contendo todas as informações gerenciais, contendo
   informações para definir tomadas de decisões;
-- Extração de relatórios;
-- Recebimento de feedbacks dos clientes no retorno dos pedidos;
 
  # Autor
  Nome: Lucas Eiji
