@@ -42,7 +42,7 @@ administração dos serviços.
 
 ## Implantação em produção
 - Banco de dados: 
-  <img aling="center" height="50em" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" />
+  <img aling="center" height="50em" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
 
 # Como executar o projeto
 
