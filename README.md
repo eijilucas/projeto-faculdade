@@ -17,9 +17,8 @@ administração dos serviços.
 # Funcionalidades 
 ## Configuração:
 - CRUD dos pedidos
-- CRUD do usuário
-- CRUD do estoque
-- CRUD dos pagamentos
+- CRUD dos produtos
+- CRUD dos usuários
 - Sistema de cadastro e login de usuários
 
 ## Condução:
