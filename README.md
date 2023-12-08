@@ -1,6 +1,6 @@
 <img aling="center" height="150em" src="https://media.discordapp.net/attachments/1138866664818090035/1167891928206028921/fasterfood-logo-cor-grande.png?ex=657deb9e&is=656b769e&hm=406fb955c7df1729f4ca1f0a1057bfa277620c228262968f064bec23be91887a&=&format=webp&quality=lossless&width=676&height=676"/>
 
-# FastFood 
+# FasterFood 
 <img src="https://media.discordapp.net/attachments/1138866664818090035/1182504445263761499/Captura_de_tela_2023-12-07_225745.png?ex=6584f015&is=65727b15&hm=004a1db3da8401d9219515f22c327721f6e0a4e7146514b990d1d79445607782&=&format=webp&quality=lossless&width=1365&height=676"/>
 <img  src="https://media.discordapp.net/attachments/1138866664818090035/1182504444777218158/Captura_de_tela_2023-12-07_225713.png?ex=6584f015&is=65727b15&hm=10ba2a909004ed8f925f368cd1e053abaf7d9452537c4bd28ae121acf6866521&=&format=webp&quality=lossless&width=1361&height=675"/>
 
