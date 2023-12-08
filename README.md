@@ -1,8 +1,7 @@
 <img aling="center" height="150em" src="https://media.discordapp.net/attachments/1138866664818090035/1167891928206028921/fasterfood-logo-cor-grande.png?ex=657deb9e&is=656b769e&hm=406fb955c7df1729f4ca1f0a1057bfa277620c228262968f064bec23be91887a&=&format=webp&quality=lossless&width=676&height=676"/>
 
 # FasterFood 
-<img src="https://media.discordapp.net/attachments/1138866664818090035/1182504445263761499/Captura_de_tela_2023-12-07_225745.png?ex=6584f015&is=65727b15&hm=004a1db3da8401d9219515f22c327721f6e0a4e7146514b990d1d79445607782&=&format=webp&quality=lossless&width=1365&height=676"/>
-<img  src="https://media.discordapp.net/attachments/1138866664818090035/1182504444777218158/Captura_de_tela_2023-12-07_225713.png?ex=6584f015&is=65727b15&hm=10ba2a909004ed8f925f368cd1e053abaf7d9452537c4bd28ae121acf6866521&=&format=webp&quality=lossless&width=1361&height=675"/>
+
 
 [![NPM](https://img.shields.io/npm/l/react)](https://https://github.com/Diogo-Peres-Pereira/FasterFood/blob/main/LICENSE) 
 
@@ -15,6 +14,8 @@ restaurantes, oferecendo ferramentas de automação para auxiliar na
 administração dos serviços.
 
 ## Layout web
+<img src="https://media.discordapp.net/attachments/1138866664818090035/1182504445263761499/Captura_de_tela_2023-12-07_225745.png?ex=6584f015&is=65727b15&hm=004a1db3da8401d9219515f22c327721f6e0a4e7146514b990d1d79445607782&=&format=webp&quality=lossless&width=1365&height=676"/>
+<img  src="https://media.discordapp.net/attachments/1138866664818090035/1182504444777218158/Captura_de_tela_2023-12-07_225713.png?ex=6584f015&is=65727b15&hm=10ba2a909004ed8f925f368cd1e053abaf7d9452537c4bd28ae121acf6866521&=&format=webp&quality=lossless&width=1361&height=675"/>
 
 ## Modelo conceitual
 ![WhatsApp Image 2023-11-04 at 13 37 56](https://github.com/Diogo-Peres-Pereira/FasterFood/assets/111434541/7269f0d8-1d52-4e73-8401-210e6bc7bc4e)
