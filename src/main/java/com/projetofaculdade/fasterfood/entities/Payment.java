@@ -1,15 +1,18 @@
 
 package com.projetofaculdade.fasterfood.entities;
 
+import java.util.Calendar;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
+import jakarta.persistence.MapsId;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
-import java.util.Calendar;
 
 @Entity
 @Table(name = "payments")
@@ -20,11 +23,11 @@ public class Payment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long paymentId;
     
-    @OneToOne
-    @JoinColumn(name = "order_id")
-    private Order orderId;
+    @JsonIgnore
+	@OneToOne
+    @MapsId
+    private Order order;
      
-    private Long costumerId;
     private Calendar registrationTime;
 
     public Long getPaymentId() {
@@ -35,20 +38,12 @@ public class Payment {
         this.paymentId = paymentId;
     }
 
-    public Long getCostumerId() {
-        return costumerId;
+    public Order getOrder() {
+        return order;
     }
 
-    public void setCostumerId(Long costumerId) {
-        this.costumerId = costumerId;
-    }
-
-    public Order getOrderId() {
-        return orderId;
-    }
-
-    public void setOrderId(Order orderId) {
-        this.orderId = orderId;
+    public void setOrder(Order order) {
+        this.order = order;
     }
 
     public Calendar getRegistrationTime() {

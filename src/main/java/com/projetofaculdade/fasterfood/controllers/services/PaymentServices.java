@@ -33,8 +33,7 @@ public class PaymentServices {
     }
 
     public void updateData(Payment entity, Payment payment) {
-        entity.setCostumerId(payment.getCostumerId());
-        entity.setOrderId(payment.getOrderId());
+        entity.setOrder(payment.getOrder());
         entity.setRegistrationTime(payment.getRegistrationTime());
     }
 

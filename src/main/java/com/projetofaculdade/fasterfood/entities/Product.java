@@ -1,15 +1,15 @@
 
 package com.projetofaculdade.fasterfood.entities;
 
+import java.util.Date;
+import java.util.Objects;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
-import java.util.Calendar;
 
 @Entity
 @Table(name = "products")
@@ -20,18 +20,29 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long productId;
     
-    @ManyToOne
-    @JoinColumn(name = "collaborator_id")
-    private Collaborator collaboratorId;
-    
     private String name;
     private double price;
     private String image;
     private String description;
     private int quantity;
-    private Calendar expirationDate;
+    private Date expirationDate;
 
-    public int getQuantity() {
+    public Product() {
+    	
+    }
+    
+    public Product(Long productId, String name, double price, String image,
+			String description, int quantity, Date expirationDate) {
+		this.productId = productId;
+		this.name = name;
+		this.price = price;
+		this.image = image;
+		this.description = description;
+		this.quantity = quantity;
+		this.expirationDate = expirationDate;
+	}
+    
+	public int getQuantity() {
         return quantity;
     }
 
@@ -39,11 +50,11 @@ public class Product {
         this.quantity = quantity;
     }
 
-    public Calendar getExpirationDate() {
+    public Date getExpirationDate() {
         return expirationDate;
     }
 
-    public void setExpirationDate(Calendar expirationDate) {
+    public void setExpirationDate(Date expirationDate) {
         this.expirationDate = expirationDate;
     }
 
@@ -55,14 +66,7 @@ public class Product {
         this.productId = productId;
     }
     
-    public Collaborator getCollaboratorId() {
-        return collaboratorId;
-    }
-
-    public void setCollaboratorId(Collaborator collaboratorId) {
-        this.collaboratorId = collaboratorId;
-    }
-    
+ 
     public String getName() {
         return name;
     }
@@ -94,6 +98,22 @@ public class Product {
     public void setDescription(String description) {
         this.description = description;
     }
-    
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(productId);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Product other = (Product) obj;
+		return Objects.equals(productId, other.productId);
+	}
     
 }

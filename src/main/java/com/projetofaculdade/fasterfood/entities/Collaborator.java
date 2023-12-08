@@ -22,7 +22,19 @@ public class Collaborator {
     private String password;
     private UserAccess userAccess;
     
-    public Long getId() {
+    public Collaborator() {
+    	
+    }
+   
+    public Collaborator(Long id, String email, String password, UserAccess userAccess) {
+		super();
+		this.id = id;
+		this.email = email;
+		this.password = password;
+		this.userAccess = userAccess;
+	}
+
+	public Long getId() {
         return id;
     }
 

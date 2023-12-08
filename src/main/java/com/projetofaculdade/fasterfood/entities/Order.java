@@ -1,7 +1,14 @@
 
 package com.projetofaculdade.fasterfood.entities;
 
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
+
 import com.projetofaculdade.fasterfood.entities.enums.OrderStatus;
+
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -9,8 +16,9 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
-import java.util.Calendar;
 
 @Entity
 @Table(name = "orders")
@@ -25,10 +33,28 @@ public class Order {
     @JoinColumn(name = "costumer_id")
     private Costumer costumerId;
     
-    private Calendar registrationTime;
+    private Date registrationTime;
     private OrderStatus orderStatus;
 
-    public Long getOrderId() {
+    @OneToMany(mappedBy = "id.order")
+	private Set<OrderItem> items = new HashSet<>();
+	
+	@OneToOne(mappedBy = "order", cascade = CascadeType.ALL)
+	private Payment payment;
+	
+    public Order() {
+    	
+    }
+
+    public Order(Long orderId, Costumer costumerId, Date registrationTime, OrderStatus orderStatus) {
+		super();
+		this.orderId = orderId;
+		this.costumerId = costumerId;
+		this.registrationTime = registrationTime;
+		this.orderStatus = orderStatus;
+	}
+
+	public Long getOrderId() {
         return orderId;
     }
 
@@ -44,11 +70,11 @@ public class Order {
         this.costumerId = costumerId;
     }
 
-    public Calendar getRegistrationTime() {
+    public Date getRegistrationTime() {
         return registrationTime;
     }
 
-    public void setRegistrationTime(Calendar registrationTime) {
+    public void setRegistrationTime(Date registrationTime) {
         this.registrationTime = registrationTime;
     }
 
@@ -60,10 +86,41 @@ public class Order {
         this.orderStatus = orderStatus;
     }
     
+    public Set<OrderItem> getItems() {
+		return items;
+	}
+
+	public Payment getPayment() {
+		return payment;
+	}
+
+	public void setPayment(Payment payment) {
+		this.payment = payment;
+	}
     
-    public double total(){
-        
-        // TODO Finalizar método
-        return 0;
+    public double getTotal(){
+    	double sum = 0;
+		for(OrderItem x : items) {
+			sum = sum + x.subTotal();
+		}
+		return sum;
     }
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(orderId);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Order other = (Order) obj;
+		return Objects.equals(orderId, other.orderId);
+	}
+
 }

@@ -19,7 +19,17 @@ public class Costumer {
     @Column(name = "costumer_name")
     private String Name;
 
-    public Long getCostumerId() {
+    public Costumer() {
+    	
+    }
+    
+    public Costumer(Long costumerId, String name) {
+		super();
+		this.costumerId = costumerId;
+		Name = name;
+	}
+
+	public Long getCostumerId() {
         return costumerId;
     }
 
