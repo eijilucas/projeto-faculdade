@@ -29,11 +29,13 @@ administração dos serviços.
 
 # Tecnologias utilizadas
 ## Back end
-- Java
-- Spring
-- Maven
-- JPA/Hibernate
-- Spring Security
+<div>
+  <img aling="center" height="50em" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+  <img aling="center" height="50em" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" />
+  - Maven
+  - JPA/Hibernate
+  - Spring Security
+</div>
 
 ## Front end
 - Thymeleaf
@@ -48,7 +50,7 @@ Pré-requisitos: Java 17
 
 ```bash
 # clonar repositório
-git clone https://github.com/eijilucas/projeto-faculdade/edit/main/README.md
+git clone https://github.com/eijilucas/projeto-faculdade
 
 # entrar na pasta do projeto back end
 cd backend
@@ -62,7 +64,7 @@ Pré-requisitos: npm / yarn
 
 ```bash
 # clonar repositório
-git clone https://github.com/eijilucas/projeto-faculdade/edit/main/README.md
+git clone https://github.com/eijilucas/projeto-faculdade
 
 # entrar na pasta do projeto front end web
 cd front-web
