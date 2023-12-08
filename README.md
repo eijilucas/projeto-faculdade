@@ -48,7 +48,7 @@ Pré-requisitos: Java 17
 
 ```bash
 # clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
+git clone https://github.com/eijilucas/projeto-faculdade/edit/main/README.md
 
 # entrar na pasta do projeto back end
 cd backend
@@ -62,7 +62,7 @@ Pré-requisitos: npm / yarn
 
 ```bash
 # clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
+git clone https://github.com/eijilucas/projeto-faculdade/edit/main/README.md
 
 # entrar na pasta do projeto front end web
 cd front-web
