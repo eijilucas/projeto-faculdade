@@ -33,8 +33,8 @@ administração dos serviços.
   <img aling="center" height="50em" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
   <img aling="center" height="50em" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" />
   <img aling="center" height="50em" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg" />
-  - JPA/Hibernate
-  - Spring Security
+  <img aling="center" height="50em" src="https://www.alura.com.br/artigos/assets/jpa-hibernate-ou-eclipselink/JPAHibernate.jpg" />
+  <img aling="center" height="50em" src="https://media.licdn.com/dms/image/C4E12AQG9PzLTPHvRVA/article-cover_image-shrink_600_2000/0/1615137890447?e=2147483647&v=beta&t=VWwwXtX-MnatXpTgypGqluwX50FTUyRTOaC7P12noBg" />
 </div>
 
 ## Front end
@@ -82,7 +82,7 @@ yarn start
   informações para definir tomadas de decisões;
 
  # Autor
- Nome: Lucas Eiji
+- Nome: Lucas Eiji
 - RGM: 11221104159
 - Nome: Jhonathan Moraes da Cunha
 - RGM: 11221103939
