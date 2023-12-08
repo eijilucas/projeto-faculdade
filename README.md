@@ -41,9 +41,10 @@ administração dos serviços.
 - Thymeleaf
 
 ## Implantação em produção
-- Banco de dados: 
-  <img aling="center" height="50em" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
-
+<div>
+  - Banco de dados: 
+    <img aling="center" height="80em" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" />
+</div>
 # Como executar o projeto
 
 ## Back end
