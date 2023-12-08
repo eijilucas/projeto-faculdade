@@ -9,6 +9,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import java.util.Calendar;
 
 @Entity
 @Table(name = "products")
@@ -23,14 +24,28 @@ public class Product {
     @JoinColumn(name = "collaborator_id")
     private Collaborator collaboratorId;
     
-    @ManyToOne
-    @JoinColumn(name = "stock_id")
-    private Stock stockId;
-    
     private String name;
     private double price;
     private String image;
     private String description;
+    private int quantity;
+    private Calendar expirationDate;
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public Calendar getExpirationDate() {
+        return expirationDate;
+    }
+
+    public void setExpirationDate(Calendar expirationDate) {
+        this.expirationDate = expirationDate;
+    }
 
     public Long getProductId() {
         return productId;
@@ -47,16 +62,6 @@ public class Product {
     public void setCollaboratorId(Collaborator collaboratorId) {
         this.collaboratorId = collaboratorId;
     }
-
-    public Stock getStockId() {
-        return stockId;
-    }
-
-    public void setStockId(Stock stockId) {
-        this.stockId = stockId;
-    }
-    
-    
     
     public String getName() {
         return name;

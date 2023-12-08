@@ -11,7 +11,6 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import java.util.Calendar;
-import java.util.List;
 
 @Entity
 @Table(name = "orders")
@@ -27,7 +26,7 @@ public class Order {
     private Costumer costumerId;
     
     private Calendar registrationTime;
-    private List<OrderStatus> orderStatus;
+    private OrderStatus orderStatus;
 
     public Long getOrderId() {
         return orderId;
@@ -53,11 +52,11 @@ public class Order {
         this.registrationTime = registrationTime;
     }
 
-    public List<OrderStatus> getOrderStatus() {
+    public OrderStatus getOrderStatus() {
         return orderStatus;
     }
 
-    public void setOrderStatus(List<OrderStatus> orderStatus) {
+    public void setOrderStatus(OrderStatus orderStatus) {
         this.orderStatus = orderStatus;
     }
     
