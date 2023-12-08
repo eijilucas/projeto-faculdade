@@ -9,7 +9,6 @@ Facilitar e agilizar os processos de atendimento e gerência em lanchonetes e
 restaurantes, oferecendo ferramentas de automação para auxiliar na
 administração dos serviços.
 
-
 ## Layout web
 
 ## Modelo conceitual
