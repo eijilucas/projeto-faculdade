@@ -1,4 +1,9 @@
-# FastFood
+<img aling="center" height="100em" src="https://media.discordapp.net/attachments/1138866664818090035/1167833498506231808/fasterfood-logo-branco.png?ex=657db533&is=656b4033&hm=1dc35140e8d5fe808ffd2b3fa90d8bbd62c905a8c12e3266fa27907d3418c699&=&format=webp&quality=lossless&width=723&height=676" />
+
+# FastFood 
+<img src="https://media.discordapp.net/attachments/1138866664818090035/1182504445263761499/Captura_de_tela_2023-12-07_225745.png?ex=6584f015&is=65727b15&hm=004a1db3da8401d9219515f22c327721f6e0a4e7146514b990d1d79445607782&=&format=webp&quality=lossless&width=1365&height=676"/>
+<img  src="https://media.discordapp.net/attachments/1138866664818090035/1182504444777218158/Captura_de_tela_2023-12-07_225713.png?ex=6584f015&is=65727b15&hm=10ba2a909004ed8f925f368cd1e053abaf7d9452537c4bd28ae121acf6866521&=&format=webp&quality=lossless&width=1361&height=675"/>
+
 [![NPM](https://img.shields.io/npm/l/react)](https://https://github.com/Diogo-Peres-Pereira/FasterFood/blob/main/LICENSE) 
 
 # Sobre o projeto
@@ -37,13 +42,11 @@ administração dos serviços.
 </div>
 
 ## Front end
-- Thymeleaf
+<img aling="center" height="50em" src="https://raw.githubusercontent.com/thymeleaf/thymeleaf-org/main/artwork/thymeleaf%202016/thymeleaf_logo_white.png" />
 
 ## Implantação em produção
-<div>
-  - Banco de dados: 
-    <img aling="center" height="80em" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" />
-</div>
+<img aling="center" height="150px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain-wordmark.svg" />
+
 # Como executar o projeto
 
 ## Back end
