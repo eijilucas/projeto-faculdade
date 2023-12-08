@@ -32,7 +32,7 @@ administração dos serviços.
 <div>
   <img aling="center" height="50em" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
   <img aling="center" height="50em" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" />
-  - Maven
+  <img aling="center" height="50em" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg" />
   - JPA/Hibernate
   - Spring Security
 </div>
