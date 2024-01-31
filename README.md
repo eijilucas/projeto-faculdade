@@ -69,10 +69,10 @@ Pré-requisitos: npm / yarn
 
 ```bash
 # clonar repositório
-git clone https://github.com/eijilucas/projeto-faculdade
+git clone https://github.com/eijilucas/projeto-faculdade-front
 
 # entrar na pasta do projeto front end web
-cd front-web
+cd projeto-faculdade-front
 
 # instalar dependências
 yarn install
