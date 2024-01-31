@@ -58,7 +58,7 @@ Pré-requisitos: Java 17
 git clone https://github.com/eijilucas/projeto-faculdade
 
 # entrar na pasta do projeto back end
-cd backend
+cd projeto-faculdade
 
 # executar o projeto
 ./mvnw spring-boot:run
